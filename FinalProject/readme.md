@@ -71,7 +71,45 @@
 
 <hr>
 
-* uname 명령어 / 사용자의 시스템 정보를 출력하는 데 사용되는 명령어 -a -s -n -r -v -m -i -h
+* uname 명령어 / 사용자의 시스템 정보를 출력하는 데 사용되는 명령어 -a(모든 정보 출력) -s(커널 이름 출력) -n(호스트 이름 출력) -r(커널 릴리스 정보 출력) -v(커널 버전 출력) -m(하드웨어 출력) -h(명령어 사용 메뉴얼)
+
+uname
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/4521647a-86c4-408e-907c-0f3af15bb6fa)
+
+-a
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/4102c38a-792f-4a2d-af67-ac20cd7444f9)
+
+-s
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/2002be91-a578-46e7-b4d2-21a88c51e086)
+
+-n
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/12188408-ddf5-4064-ab1e-fcfefa55d991)
+
+-r
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/bb64db87-d922-499a-a353-ebcf1f9ce0a2)
+
+-v
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/70f99771-1ff3-47ac-9ec6-fd92784f75e6)
+
+-m
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/2dad5542-c5a5-446c-9f0c-3ba249c5865d)
+
+-h
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/ddff5813-b25f-4080-bc7e-bf5236b45ed5)
+
+<hr>
+
+
+
+
 
 
 
