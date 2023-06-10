@@ -107,6 +107,64 @@ uname
 
 <hr>
 
+* head 명령어 / 주어진 파일의 앞 부분을 출력하는 데 사용되는 명령어로 디폴트는 앞 10개를 출력한다  -n(입력한 정수 라인만큼 출력) -c(입력한 정수 바이트만큼 출력) -h(명령어 사용 메뉴얼) (4개)
+
+Default
+
+<br>
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/b6c44cdc-5c97-490c-8af0-b3b261c38371)
+
+-n
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/edea0839-21f5-4d28-ae07-dfbfa513cf84)
+
+-c
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/9f00f066-9af5-4b2e-91af-7f4685fbdfac)
+
+-h
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/7a5f153c-0a37-4d35-a051-26e108d809f1)
+
+<hr>
+
+* tail 명령어 / 주어진 파일의 뒤 부분을 출력하는 데 사용되는 명령어로 디폴트는 뒤에 라인 10개를 출력한다  -n(입력한 정수 라인만큼 출력) -c(입력한 정수 바이트만큼 출력) -q(파일 이름을 출력하지 않는다) -v(파일 이름을 출력한다) -h(명령어 사용 메뉴얼) (4개)
+
+
+Default
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/845fc676-f6b6-400a-9e56-7ce91c301406)
+
+
+-n
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/45ce42c2-e791-467d-a161-35d3d53f815d)
+
+-c
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/2a22e1bd-9bf4-4ec5-ad16-438fdf1f8fa3)
+
+-q
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/9b60bd16-1c60-4006-ab05-19b0e35c8750)
+
+-v
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/4400898d-13bc-4cab-a15f-a3d9f5d4cc79)
+
+-h 
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/31042449-5e5d-46da-97f2-faed40d826a0)
+
+
+
+
+
+
+
+
+
 
 
 
