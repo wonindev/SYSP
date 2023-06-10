@@ -43,9 +43,29 @@
 
 <hr>
 
+* echo 명령어 / echo 명령어는 주어진 인자나 텍스트를 출력하는 데 사용하는 명령어로 이스케이프 문자가 있을 경우 "" 로 인자를 전달한다. -n(마지막 개행을 출력하지 않는다) -e(이스케이프 문자를 이스케이프 문자로 인식)
+ -E(이스케이프 문자를 ""로 묶어서 인식) (4개)
+ 
 
 
+![image](https://github.com/wonindev/SYSP/assets/100292629/5fa459cd-4435-4e17-b1a0-1795c4406611)
 
+-n 옵션
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/1515215e-20d2-4c79-aa00-d709c354c096)
+
+-e 옵션
+
+<br>
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/cf6308d1-3627-49ef-9208-0d32c0f09fa9)
+
+-E 옵션
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/ebdeb157-c97f-4d43-880f-a8e4e3dd2f84)
+
+
+<hr>
 
 
 
