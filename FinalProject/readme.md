@@ -34,6 +34,21 @@
 
 ![image](https://github.com/wonindev/SYSP/assets/100292629/e498dd11-0d5a-4e20-9dda-ca1742ecf3a0)
 
+<hr>
+
+* clear 명령어 / 터미널의 모든 내용을 삭제하는 명령어(1개)
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/1fbc5fa5-d79b-41f2-bf54-8d1072c0f4ba)
+![image](https://github.com/wonindev/SYSP/assets/100292629/9d0d5dd8-e044-413c-be87-7c5346d47686)
+
+<hr>
+
+
+
+
+
+
+
 
 
 
