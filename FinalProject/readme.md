@@ -2,17 +2,34 @@
 ### 2019775022 박상원
 <hr>
 <br>
-rev 명령어 / 해당 ^c 전까지 입력 받은 문자열을 뒤집어서 출력하는 명령어 -h 옵션 구현 (2개)
+rev 명령어 / 해당 ^c 전까지 입력 받은 문자열을 뒤집어서 출력하는 명령어 -h(명령어 사용 메뉴얼) 옵션 구현 (2개)
 
 ![image](https://github.com/wonindev/SYSP/assets/100292629/1c46a566-b0cc-4e0d-b55e-d813c7959a02)
 
 <hr>
 
-yes 명령어 / yes 만 올 경우 y를 ^c 전까지 무한으로 출력, yes 뒤에 다른 문자열이 올 경우 해당 문자열을 ^c 전까지 무한으로 출력, -h 옵션 구현(2개)
+yes 명령어 / yes 만 올 경우 y를 ^c 전까지 무한으로 출력, yes 뒤에 다른 문자열이 올 경우 해당 문자열을 ^c 전까지 무한으로 출력, -h 옵션(명령어 사용 메뉴얼) 구현(2개)
 
 ![image](https://github.com/wonindev/SYSP/assets/100292629/fd94a1d7-624e-43cc-9c00-50fb0ae098b8)
 ![image](https://github.com/wonindev/SYSP/assets/100292629/5d3b2e16-73b2-494d-97d5-cf990af5d6fb)
 ![image](https://github.com/wonindev/SYSP/assets/100292629/77d3ed2f-4a7f-4588-8b0f-23b790b22cce)
+
+<hr>
+
+pwd 명령어 / 현재 작업 중인 디렉토리 경로 표시(1개)
+![image](https://github.com/wonindev/SYSP/assets/100292629/d6aa5a6e-c679-4aac-9e64-43da91abb181)
+
+<hr>
+mkdir 명령어 / 디렉토리를 생성하는 명령어, -m(폴더에 권한 부여 옵션) 디폴트는 777 구현(2개)
+
+![image](https://github.com/wonindev/SYSP/assets/100292629/296eac70-730a-43cd-8d98-8e174c1c892d)
+
+
+ls- al을 통해 권한이 다른 것을 확인
+![image](https://github.com/wonindev/SYSP/assets/100292629/c5d6f4aa-9124-4de2-a02c-8c97e2ed5e93)
+
+
+
 
 
 
