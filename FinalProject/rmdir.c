@@ -4,7 +4,7 @@
 
 int main(int ac, char *av[]) {
     
-    if (rmdir(av[1]) == -1) {
+    if (rmdir(av[1]) == -1) { // 삭제할 디렉토리 인자를 rmdir 함수를 통해 삭제
         fprintf(stderr, "Error:Fail to Delete Directroy\n");
         return 1;
     }

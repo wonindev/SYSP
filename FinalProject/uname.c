@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
     int show_machine = 0;
     int show_processor = 0;
 
-    while ((opt = getopt(argc, argv, "asnrvmh")) != -1) {
+    while ((opt = getopt(argc, argv, "asnrvmh")) != -1) { // 출력해야하는 해당 옵션은 1로 해준다 전체 출력이라면 show_all을 1로 설정
         switch (opt) {
         case 'a':
             show_all = 1;

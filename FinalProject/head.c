@@ -3,7 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#define DEFAULT_LINE_COUNT 10;
+#define DEFAULT_LINE_COUNT 10; // 디폴트는 10줄 이기 때문에 상수로 선언
 
 void print_help(const char* program_name) {
     printf("How to Use: %s [-n <Num of Line>] [-c <Num of Byte>] [FileName...]\n", program_name);
@@ -12,17 +12,17 @@ void print_help(const char* program_name) {
 }
 
 void print_file_lines(const char* filename, int line_count) {
-    FILE* file = fopen(filename, "r");
+    FILE* file = fopen(filename, "r"); // 읽기 전용으로 파일을 열고
     if (file == NULL) {
         fprintf(stderr, "Can not open file: %s\n", filename);
         return;
     }
 
-    char buffer[BUFSIZ];
+    char buffer[BUFSIZ]; // stdio.h에 포함되어 있는 멤버 상수로 입출력 버퍼 크기를 나타내는데 일반적으로 8192바이트로 설정되어 있음
     int lines_printed = 0;
-    while (fgets(buffer, sizeof(buffer), file) != NULL && lines_printed < line_count) {
-        printf("%s", buffer);
-        lines_printed++;
+    while (fgets(buffer, sizeof(buffer), file) != NULL && lines_printed < line_count) { // while문을 통해 
+        printf("%s", buffer); // 버퍼에 있는 녀석을 출력하고
+        lines_printed++; // 1증가한다
     }
 
     fclose(file);
@@ -58,7 +58,7 @@ int main(int argc, char* argv[]) {
     while ((opt = getopt(argc, argv, "n:c:h")) != -1) {
         switch (opt) {
         case 'n':
-            line_count = atoi(optarg);
+            line_count = atoi(optarg); //atoi 함수는 문자열을 정수로 변환하는 함수로 옵션 이후에 받은 문자를 정수로 바꾼다 그래야 라인수가 정수형으로 들어가짐
             if (line_count <= 0) {
                 fprintf(stderr, "Incorrect Num of Line\n");
                 return 1;
@@ -66,7 +66,7 @@ int main(int argc, char* argv[]) {
             break;
         case 'c':
             line_count = 0;
-            byte_count = atoi(optarg);
+            byte_count = atoi(optarg); // 위와 똑같다
             if (byte_count <= 0) {
                 fprintf(stderr, "Incorrect Num of Byte.\n");
                 return 1;
@@ -88,8 +88,8 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // 파일명이 주어지지 않은 경우 표준 입력에서 읽어옴
-    if (optind == argc) {
+    
+    if (optind == argc) { // 파일명이 주어지지 않은 경우 표준 입력에서 읽어옴
         char buffer[BUFSIZ];
         int lines_printed = 0;
         int bytes_printed = 0;
@@ -123,7 +123,7 @@ int main(int argc, char* argv[]) {
             }
         }
     }
-    else {
+    else { // 파일 명이 주어졌을 때 출력하는 반복문을 통해 해당 라인 혹은 해당 바이트까지 출력한다
         for (int i = optind; i < argc; i++) {
             if (line_count > 0) {
                 print_file_lines(argv[i], line_count);

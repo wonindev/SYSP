@@ -5,7 +5,7 @@
 
 
 void echo(const char* text, int interpret_escape) {
-    if (interpret_escape) {
+    if (interpret_escape) { // 이스케이프 문자를 이스케이프 문자로 인식을 해야한다면
         int len = strlen(text);
         char* output = malloc(len * 2 + 1);
         if (output == NULL) {
@@ -15,16 +15,20 @@ void echo(const char* text, int interpret_escape) {
 
         int j = 0;
         for (int i = 0; i < len; i++) {
-            if (text[i] == '\\') {
-                if (text[i + 1] == 'n') {
-                    output[j++] = '\n';
+            if (text[i] == '\\') { // 스트링의 해당 자리가 \이고
+                if (text[i + 1] == 'n') { // 다음 글자가 n이면
+                    output[j++] = '\n'; // \n을 담는다
+                    i++; // 다음칸으로 자리 이동
+                }
+                else if (text[i + 1] == 't') { //위와 같은 메커니즘
+                    output[j++] = '\t';
                     i++;
                 }
-                else {
-                    output[j++] = text[i];
+                else { //이스케이프 문이 아니라면 \ 자체를 담는다
+                    output[j++] = text[i]; 
                 }
             }
-            else {
+            else { // 그렇지 않으면 그냥 문자열을 output에 담는다
                 output[j++] = text[i];
             }
         }
@@ -57,10 +61,10 @@ int main(int argc, char* argv[]) {
             print_newline = 0;
             break;
         case 'e':
-            interpret_escape = 1;
+            interpret_escape = 1; // e옵션은 이스케이프를 그 자체로 인식해야하기 때문에 1이다
             break;
         case 'E':
-            interpret_escape = 0;
+            interpret_escape = 0; // E옵션은 ""로 묶어서 생각하기 때문에 0이다
             break;
         case 'h':
             print_help(argv[0]);
@@ -69,12 +73,12 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    if (optind == argc) {
+    if (optind == argc) { // argc가 1이라면 echo할 스트링이 없다는 의미로 \n만 출력하고 종료한다
         if (print_newline) {
             printf("\n");
         }
     }
-    else {
+    else { // 그렇지 않다면 에코함수에 해당 문자열을 전달하고 위의 스위치 문에서 전달받은 이스케이프를 실행해야할지 말아야할지를 파라미터로 넘긴다.
         for (int i = optind; i < argc; i++) {
             echo(argv[i], interpret_escape);
             if (i < argc - 1) {
